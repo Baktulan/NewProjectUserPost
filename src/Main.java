@@ -21,32 +21,27 @@ public class Main {
                     "\n"+"if you already have account press 2 to LOG IN"+"\n"+"Press 3 to get all Users");
             number = scanner.nextInt();
             switch (number) {
-                case 1:
+                case 1 -> {
                     System.out.println("Write full name:");
-                    String fullName=scannerForString.nextLine();
+                    String fullName = scannerForString.nextLine();
                     System.out.println("Write email");
-                    String email=scannerForString.nextLine();
+                    String email = scannerForString.nextLine();
                     System.out.println("Write password");
-                    String password= scannerForString.nextLine();
+                    String password = scannerForString.nextLine();
                     System.out.println("Write your gender MALE || FEMALE");
-                    String gender= scannerForString.nextLine().toUpperCase();
-                    User use= new User(fullName,email,password,Gender.valueOf(gender));
+                    String gender = scannerForString.nextLine().toUpperCase();
+                    User use = new User(fullName, email, password, Gender.valueOf(gender));
                     System.out.println(userService.register(use));
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("Write email:");
-                    String email1=scannerForString.nextLine();
+                    String email1 = scannerForString.nextLine();
                     System.out.println("Write password");
-                    String password1=scannerForString.nextLine();
+                    String password1 = scannerForString.nextLine();
                     System.out.println(userService.login(email1, password1));
-                    break;
-                case 3:
-                    System.out.println(userService.getAllUsers());
-                    break;
-                default:
-                    System.out.println("Invalid , please try again");
-
-
+                }
+                case 3 -> System.out.println(userService.getAllUsers());
+                default -> System.out.println("Invalid , please try again");
             }
         }
 

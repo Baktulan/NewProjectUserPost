@@ -90,12 +90,12 @@ public class User {
 
     @Override
     public String toString() {
-        return "User " +"\n"+
-                "id: " + id+ "\n"+
-                "fullName: " + fullName + "\n" +
-                "email: " + email + "\n" +
-                "password: " + password + "\n" +
-                "gender: " + gender +"\n"+
-                "posts: " + posts +"\n";
+        return "USER " +
+                "ID : " + id+ "\n"+
+                "FULL NAME: " + fullName + "\n" +
+                "EMAIL    : " + email + "\n" +
+                "PASSWORD : " + password + "\n" +
+                "GENDER   : " + gender +"\n"+
+                "POSTS    : " + posts +"\n"+"~~~~~~~~~~~~~~~~~~~~~~~~~~"+"\n";
     }
 }

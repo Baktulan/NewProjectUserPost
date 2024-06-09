@@ -45,9 +45,9 @@ public class Post {
 
     @Override
     public String toString() {
-        return "Post: " +
-                "id: " + id +"\n"+
-                "image: " + image + "\n" +
-                "description: " + description + "\n";
+        return "POST " +
+                "ID : " + id +"\n"+
+                "IMAGE      : " + image + "\n" +
+                "DESCRIPTION: " + description + "\n";
     }
 }
